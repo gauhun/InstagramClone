@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/snippet_top_accountsetting_toolbar"/>
+
+    <TextView
+        android:id="@+id/tv_dum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="164dp"
+        android:text="SignOut Profile"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_dum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_dum1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="43dp"
+        android:text="Work in Progress!"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_signOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="297dp"
+        android:background="@drawable/white_rounded_button"
+        android:text="signOut" />
+
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_black_24dp"
+        android:title="share"/>
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/ic_add_circle_black_24dp"
+        android:title="add"/>
+
+    <item
+        android:id="@+id/following"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="following"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_android_black_24dp"
+        android:title="profile"/>
+
+</menu>

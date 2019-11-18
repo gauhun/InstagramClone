@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">InstagramGsr</string>
+
+    <!-- fragment names -->
+    <string name="edit_profile_fragment">Edit Profile</string>
+    <string name="sign_out_fragment">SignOut</string>
+    <string name="profile_fragment">Profile</string>
+
+    <!-- Dialog -->
+    <string name="dialog_confirm_password">ConfirmPasswordDialog</string>
+
+    <!-- Firebase Messages -->
+    <string name="auth_success">Authentication successful</string>
+    <string name="auth_failed">Authentication failed</string>
+
+    <!-- Firebase database fields -->
+    <string name="dbname_users">users</string>
+    <string name="dbname_account_setting">user_account_setting</string>
+    <string name="field_username">username</string>
+    <string name="field_email">email</string>
+    <string name="field_website">website</string>
+    <string name="field_description">description</string>
+    <string name="field_displayName">display_name</string>
+    <string name="field_phoneNumber">phone_number</string>
+
+
+    <!-- Intent Extras -->
+    <string name="calling_activity">calling activity</string>
+
+    <!--_ Profile Name -->
+    <string name="profile_activity">profile activity</string>
+
+</resources>

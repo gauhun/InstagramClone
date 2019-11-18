@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <!-- User and Follower section -->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_photo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/insta_logo"
+                    app:civ_border_color="@color/grey"
+                    app:civ_border_width="1dp" />
+
+                <include layout="@layout/snippet_profile_top_right_count_info"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/linearLayout1"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_profile_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gautam"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_profile_user_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I am new to insta"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:id="@+id/tv_profile_user_website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mywebpage.com"
+                    android:textSize="18sp"
+                    android:textColor="@color/blue"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <!-- Grid Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginBottom="50dp">
+
+            <GridView
+                android:id="@+id/profile_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:verticalSpacing="1dp"
+                android:horizontalSpacing="1dp"
+                android:gravity="center"
+                android:stretchMode="columnWidth"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</merge>
